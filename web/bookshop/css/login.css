@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-5-15, 10:42:08
+    Author     : 14520
+*/
+#center{
+    width:1080px;
+    height:520px;
+    margin:15px auto;
+    background-repeat:no-repeat;
+    border-radius:50px 50px 50px 50px;
+}
+a{
+    color:red;
+    text-decoration:none;
+}
+a:hover{
+    color:#f00;
+}
+
+#main p{
+    line-height:60px;
+    font-size:20px;
+    color:#000;
+    text-align:center;
+}
+form{
+    width:420px;
+    height:200px;
+    padding:60px 50px;
+    position:relative;
+}
+form p{
+    border:3px solid rgb(74,94,129);
+    margin-top:20px;
+    width:354px;
+    height:60px;
+    border-radius:5px;
+}
+form p label{
+    float:left;
+    height:60px;
+    width:80px;
+    color:#fff;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    background-color:rgba(74,94,129,0.8);
+
+}
+form p input{
+    height:60px;
+    width:273px;
+    background-color:rgba(255,255,255,0.8);
+    font-size:20px;
+    color:#000;
+    border:0;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+}
+
+form #login{
+    border:0px;
+    width:150px;
+    height:50px;
+    float:left;
+    margin-left:150px;
+}
+#login input{
+    font-weight:bolder;
+    font-size:20px;
+    color:#fff;
+    width:150px;
+    height:50px;
+    border-radius:5px;
+    background-color:rgb(201,105,33);
+}
+form #other{
+    width:200px;
+    height:120px;
+    float:left;
+    margin-left:20px;
+    font-size:20px;
+    /*background-color:#f00;*/
+    border:0px;
+}
+hr{
+    border:1px solid #777777;
+    width:1024px;
+}

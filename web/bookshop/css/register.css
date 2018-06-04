@@ -1,0 +1,106 @@
+
+#title{
+    width:1024px;
+    height:130px;
+    background-image:url(../img/top.jpg);
+    background-size:1400px 130px;
+}
+
+#center{
+    width:500px;
+    height:440px;
+    margin-top:-50px;
+    font-weight:bolder;
+}
+#other{
+    text-align:right;
+    font-size:20px;
+}
+
+#main{
+    margin:-60px 0px 0px 0;
+    margin-left: 228px;
+    float:left;
+}
+#centerright{
+    width:250px;
+    height:450px;
+    margin-top:0px;
+    float:left;
+    font-size:25px;
+    font-weight:normal;
+}
+#centerright p{
+    color:#888;
+    font-size:25px;
+}
+h2{
+    text-align:center;
+    font-size:30px;
+    color:#666;
+}
+form{
+    width:1080px;
+    height:450px;
+}
+.group_div{
+    font-size:22px;
+    float:left;
+    margin-left:30px;
+    margin-top:20px;
+    font-weight:bolder;
+    border:2px solid rgb(74,94,129);
+    width:280px;
+    height:35px;
+    background-color:rgb(74,94,129);
+}
+label{
+    color:#fff;
+    line-height:35px;
+}
+input{
+    float:right;
+    line-height:30px;
+    font-size:20px;
+    color:#999;
+    width:150px;
+    height:35px;
+    border:none;
+}
+.register_button{
+    font-weight:bolder;
+    width:260px;
+    height:40px;
+    font-size:25px;
+    background-color:#66d;
+    color:#fff;
+}
+.login_div{
+    font-size:22px;
+    float:left;
+    margin-left:70px;
+    margin-top:50px;
+    font-weight:bolder;
+    width:250px;
+    height:35px;
+}
+#foot{
+    width:1024px;
+    height:80px;
+    text-align:center;
+    background:rgba(74,94,129,0.8);
+}
+#foot p{
+    color:#eeeeee;
+}
+#foot hr{
+    border:1px solid #aaa;
+    width:100%;
+}
+a{
+    text-decoration:none;
+    color:blue;
+}
+a:hover{
+    color:red;
+}

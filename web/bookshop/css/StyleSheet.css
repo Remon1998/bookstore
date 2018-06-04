@@ -1,0 +1,110 @@
+
+.button {
+    float: left;
+    border: 1px solid green
+}
+.btn{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #CCCCCC;
+    font-size: 14px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#img.source-image {width: 100%;position: absolute;top: 0;left: 0;}
+#content{
+    width: 420px;
+    height: 300px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.login-header img{
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.login-input-box{
+    font-size:100%;
+    margin-top: 12px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+.login-input-box input{
+    width: 340px;
+    height: 32px;
+    margin-left: 18px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding-left: 42px;
+}
+.login-input-box input:hover{
+    border: 1px solid #ff7d0a;
+}
+.login-input-box input:after{
+    border: 1px solid #ff7d0a;
+}
+.login-input-box .icon{
+    width: 24px;
+    height: 24px;
+    margin: 6px 4px 6px 24px;
+    background-color: #ff7d0a;
+    display: inline-block;
+    position: absolute;
+    border-right: 1px solid #dcdcdc;
+}
+
+.login-button-box{
+    margin-top: 12px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+.login-button-box{
+    background-color: #6C6C6C;
+    color: #ffffff;
+    font-size: 25px;
+    width: 250px;
+    height: 40px;
+    margin-left: 18px;
+    
+}
+.login-button-box button:hover{
+    background-color: #ee7204;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.login-button-box button:active{
+    background-color: #ee7204;
+}
+.logon-box{
+    margin-top: 20px;
+    text-align: center;
+}
+.logon-box a{
+    margin: 30px;
+    color: #4a4744;
+    font-size: 13px;
+    text-decoration: none;
+}
+.logon-box a:hover{
+    color: #ff7d0a;
+}
+.logon-box a:active{
+    color: #ee7204;
+}

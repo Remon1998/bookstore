@@ -1,0 +1,202 @@
+<HTML>
+    <HEAD>
+        <TITLE>Online BookStore</TITLE>
+        <!--设置编码方式-->
+        <meta charset="UTF-8"> <!-- for HTML5 -->
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+        <link rel="stylesheet" href="images/CSS.CSS" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/login.css" />   
+        <style>
+            .login-input-box .icon.icon-user{
+                background: url("images/user.jpg") no-repeat center;
+            }
+            .login-input-box .icon.icon-password{
+                background: url("images/passwd.jpg") no-repeat center;
+            }
+        </style>
+        <style>
+            nav {
+                position: absolute;
+                height: 35px;
+                line-height: 10px;
+                width: 560px; 
+                background-color: rgba(52, 152, 219, 0.9);
+            }
+            nav a {
+                color: #fff;
+                display: inline-block;
+                padding: 9px 15px;
+                line-height: 1;
+                text-decoration: none;
+                -moz-border-radius: 2px;
+                -webkit-border-radius: 2px;
+                border-radius: 10px;
+            }
+            nav a:hover {
+                -moz-box-shadow: 0 0 0 1px #FFC125;
+                -webkit-box-shadow: 0 0 0 1px #FFC125;
+                box-shadow: 0 0 0 1px #FFC125;
+            }
+        </style>
+        <!-- 设置加载JavaScript-->
+        <SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+<!--
+            function window_onload() {
+<!--Page.OnLoad-->
+            }
+//-->
+        </SCRIPT>
+    </HEAD>
+    <!-- 设置页面显示背景颜色、边距和加载方式-->
+    <BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
+          onload="return window_onload()" style="background: url(images/bg.jpg);background-position:-180,100;">
+        <!-- 设置表格属性，包括宽、高，居中显示和表格边线-->
+        <table width="1080" border="0" cellspacing="0" cellpadding="0"
+               align="center" height="100">
+            <tr>
+                <td height="100" width="1080" background="images/index_top.jpg" 
+                    valign="top">
+                    <table border="0" cellspacing="0" cellpadding="0" width="780"
+                           align="center">
+                        <tr>
+                            <td height="35" width="380">
+                                <font color="#FFFFFF"></font>
+                                <div align="center"></div>
+                            </td>
+                            <td height="35" width="200">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" width="600">
+                                <div align="left">
+                                    <font color="#FFFFFF"> <b><font size="5"> <!--设置书店名称-->
+                                        Online BookStore </font> </b> </font>
+                                </div>
+                            </td>
+                            <td height="30" width="200">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" width="500">
+                                <div align="center">
+                                    <font size="3" color="#80FFFF"> <!--设置书店英文名称--> --------Our Soul Food </font>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table width="1080" border="0" cellspacing="0" cellpadding="0"
+               align="center"  height="25">
+            <!--            background="images/nv.png"-->
+            <tr>
+                <td valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                           align="center" height="28">
+                        <tr>
+                            <!-- 设置首页按钮的显示方式，点击跳转到index.jsp-->
+                            <td width="14%">
+                                <table  class="navlink" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                        height="28" style="background-color:#d0d0d0;opacity:0.8;">
+                                    <tr> 
+                                        <td width="100%">
+                                            <div align="center" style="vertical-align: middle; border-right:solid 1px black;">
+                                                <b> <a href="booklist.jsp" ><font size="2" color="#670e0e">Home</font>
+                                                    </a> </b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!--设置书店简介的按钮开始-->
+                            <td width="14%">
+                                <table class="navlink" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                       height="28" style="background-color:#d0d0d0;opacity:0.8;">
+                                    <tr>
+                                        <td width="100%">
+                                            <div align="center" style="vertical-align: middle; border-right:solid 1px black;">
+                                                <b> <!--该链接还没完成--> <a href="introduction.jsp"><font size="2" color="#670e0e">
+                                                        <!--Button1--> Introduction </font> </a> </b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!--设置书店简介的按钮结束-->
+
+                            <!--设置新书介绍按钮开始-->
+                            <td width="14%">
+                                <table class="navlink" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                       height="28" style="background-color:#d0d0d0;opacity:0.8;">
+                                    <tr>
+                                        <td width="100%">
+                                            <div align="center"  style="vertical-align: middle; border-right:solid 1px black;">
+                                                <b> <!--设置新书介绍按钮跳转--> <a href="login.jsp"><font size="2"
+                                                                                                color="#670e0e"> Login </font> </a> </b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!--设置新书介绍按钮结束-->
+
+                            <!--设置在线服务按钮开始-->
+                            
+                            <!--设置在线服务按钮结束-->
+
+                            <!--设置本店公告按钮开始-->
+                            <td width="14%">
+                                <table class="navlink" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                       height="28" style="background-color:#d0d0d0;opacity:0.8;">
+                                    <tr>
+                                        <td width="100%">
+                                            <div align="center"  style="vertical-align: middle; border-right:solid 1px black;">
+                                                <b> <!--本店公告按钮链接--> <a href="address.jsp"><font size="2"
+                                                                                                color="#670e0e"> Address </font> </a> </b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!--设置本店公告按钮结束-->
+
+                            <!--设置店长答疑按钮开始-->
+                            <td width="14%">
+                                <table class="navlink" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                       height="28" style="background-color:#d0d0d0;opacity:0.8;">
+                                    <tr>
+                                        <td width="100%">
+                                            <div align="center"  style="vertical-align: middle; border-right:solid 1px black;">
+                                                <b> <!--店长答疑按钮链接--> <a href="aboutus.jsp"><font size="2"
+                                                                                                color="#670e0e"> About us </font> </a> </b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!--设置店长答疑按钮结束-->
+
+                            <!--设置管理员入口按钮开始-->
+                            <td width="16%">
+                                <table class="navlink" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                       height="28" style="background-color:#d0d0d0;opacity:0.8;">
+                                    <tr>
+                                        <td width="100%">
+                                            <div align="center">
+                                                <b> <!--点击管理员入口跳转链接--> <a href="admin/adm_login.jsp">
+                                                        <font color="#670e0e" size="2"> System Management </font> </a> </b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!--设置管理员入口按钮结束-->
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>

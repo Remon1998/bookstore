@@ -1,0 +1,75 @@
+<%@ page contentType="text/html; charset=gb2312"%>
+<%@ page import="netshop.book.bean.*"%>
+<jsp:useBean id="book_list" scope="page"
+             class="netshop.book.service.manage_book" />
+<jsp:useBean id="classlist" scope="page"
+             class="netshop.book.service.manage_bookclass" />
+<%String classid = request.getParameter("classid");
+String classname ="";
+String keyword = request.getParameter("keyword");
+if (classid==null) classid="";
+if (keyword==null) keyword="";
+keyword = book_list.to_String(keyword);
+%>
+
+<table width="200" border="0" cellspacing="1" cellpadding="1">
+    <tr></tr>
+    <tr>
+        <td style="background-color:#00E3E3;opacity:0.6;" align="center">
+            <b>Book Classification </b>
+        </td>
+    </tr>
+    <% if (classlist.seachBookClass()){
+    for (int i=0;i<classlist.getClasslist().size();i++){
+        bookclass bc = (bookclass) classlist.getClasslist().elementAt(i); 
+        if ( classid.equals(Integer.toString(bc.getId())) ) classname=bc.getClassName();
+        %>
+        <tr style="margin-top: 5px;">
+            <td style="padding-top: 10px;background-color:#BBFFFF;opacity:0.6;" align="center" >
+                <a href="booklist.jsp?classid=<%= bc.getId()%>"><%= bc.getClassName()%></a>
+                <br>
+            </td>
+        </tr>
+        <%		}			
+        } %>
+        <FORM name=form1 METHOD=POST ACTION="booklist.jsp">
+            <tr>
+                <td align="center" style="padding-top: 20px">
+                    <b>Book Search:</b>
+                </td>
+            </tr>
+            </table>
+            <table>
+                <tr>
+                    <td lign="right">
+                        Category:
+                    </td>
+                    <td>
+                        <SELECT NAME="classid">
+                            <option value="">
+                                All category
+                            </option>
+                            <%
+                            for (int i=0;i<classlist.getClasslist().size();i++){
+                                bookclass bc = (bookclass) classlist.getClasslist().elementAt(i); %>
+                                <option value="<%= bc.getId()%>"><%= bc.getClassName() %></option>
+                                <%		
+                                }			
+                                %>
+                        </SELECT>
+                    </td>
+                </tr>
+                <tr>
+                    <td lign="right">
+                        Keyword:
+                    </td>
+                    <td >
+                        <INPUT  TYPE="text" NAME="keyword" size=8 maxlength=40
+                                value="<%= keyword %>">
+                        <button style="background-image: url(../bookshop/images/btn_search_box.gif);background-position:-3,-10;height: 24;width: 24 ;-moz-border-radius:6px; -webkit-border-radius: 6px;border-radius:6px;" TYPE="submit" name="submit" />
+                    </td>
+
+                </tr>
+
+        </FORM>
+</table>
